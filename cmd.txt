@@ -1,0 +1,21 @@
+minikube status
+
+minikube start
+
+minikube status
+
+kubectl cluster-info
+
+kubectl apply -f nginx-deployment.yaml
+
+kubectl apply -f nginx-service.yaml
+
+kubectl get deployments
+kubectl get replicasets
+kubectl get pods
+
+kubectl expose deployment nginx-deployment \
+--type=NodePort \
+--port=80
+
+minikube service nginx-deployment
